@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link rel="stylesheet" href="./lib/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="./lib/css/ui-bootstrap-custom-2.0.0-csp.css" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="./default.css" title="no title" charset="utf-8">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>NHS</title>
+    </head>
+    <body ng-app="nhs" ng-controller="main" ng-strict-di>
+        <header>
+        	<ng-include src="'templates/header.html'"></ng-include>
+        </header>
+
+        <main class="container">
+            <div ui-view></div>
+        </main>
+
+        <script src="./lib/js/jquery.js"></script>
+        <script src="./lib/js/bootstrap.js"></script>
+        <script src="./lib/js/angular.js"></script>
+        <script src="./lib/js/angular-ui-router.js"></script>
+        <script src="./lib/js/ui-bootstrap-custom-2.0.0.js"></script>
+        <script src="./lib/js/ui-bootstrap-custom-tpls-2.0.0.js"></script>
+
+        <script src="app.js"></script>
+        <script src="app.routes.js"></script>
+
+        <script src="services/auth.js"></script>
+        <script src="services/events.js"></script>
+        <script src="services/users.js"></script>
+        <script src="services/utils.js"></script>
+
+        <script src="controllers/main.js"></script>
+        <script src="controllers/login.js"></script>
+        <script src="controllers/dashboard.js"></script>
+        <script src="controllers/event.js"></script>
+		<script src="controllers/member.js"></script>
+        <!-- <script src="all.js"></script> -->
+    </body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "HH-Interact",
+  "version": "1.0.0",
+  "description": "Hatboro-Horsham High School Interact Website",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.15.2",
+    "angular-ui-bootstrap": "^2.0.0",
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "grunt-angular-templates": "^1.1.0",
+    "bootstrap": "^3.3.6",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "jsonwebtoken": "^7.0.1",
+    "moment": "^2.14.1",
+    "mongoose": "^4.5.3",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "jquery": "^2.2.4",
+    "webpack": "^1.13.1",
+    "raw-loader": "^0.5.1",
+    "webpack-dev-server": "^1.14.1",
+    "ui-router": "^1.0.0-alpha.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickIannarone/HH-Interact.git"
+  },
+  "author": "Nicholas Iannarone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickIannarone/HH-Interact/issues"
+  },
+  "homepage": "https://github.com/NickIannarone/HH-Interact#readme"
+}
