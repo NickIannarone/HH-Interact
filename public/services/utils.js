@@ -1,6 +1,6 @@
 (function(angular) {
 
-    angular.module('interact')
+    angular.module('nhs')
 
     .factory('Excel', ["$window", function($window) {
         var uri = 'data:application/vnd.ms-excel;base64,';

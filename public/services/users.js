@@ -1,4 +1,4 @@
-angular.module('interact')
+angular.module('nhs')
 
     .factory("User", ["$http", "$rootScope", "Auth", function($http, $rootScope, Auth) {
         var apiUrl = '/api/users/';

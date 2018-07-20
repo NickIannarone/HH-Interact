@@ -1,4 +1,4 @@
-angular.module('interact')
+angular.module('nhs')
 
     .controller('login', ['$scope', "$state", "$rootScope", "Auth", function($scope, $state, $rootScope, Auth) {
         $scope.processing = false;

@@ -105,7 +105,7 @@ function StorageService($window) {
     };
 }
 
-angular.module('interact.auth', [])
+angular.module('nhs.auth', [])
 
     .factory('Auth', ['$http', '$q', 'AuthToken', '$cacheFactory', AuthFactory])
     .factory('AuthToken', ['storageService', AuthTokenFactory])

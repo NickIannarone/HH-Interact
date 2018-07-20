@@ -1,4 +1,4 @@
-angular.module('interact')
+angular.module('nhs')
 
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 

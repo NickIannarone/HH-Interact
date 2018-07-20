@@ -1,7 +1,7 @@
-angular.module('interact', [
+angular.module('nhs', [
     'ui.router',
     'ui.bootstrap',
-    'interact.auth'
+    'nhs.auth'
 ])
 
 .config(['$httpProvider', function($httpProvider) {

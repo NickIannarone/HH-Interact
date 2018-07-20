@@ -1,7 +1,7 @@
 {
-  "name": "HH-Interact",
+  "name": "hh-nhs",
   "version": "1.0.0",
-  "description": "Hatboro-Horsham High School Interact Website",
+  "description": "HHHS Interact Website",
   "main": "server.js",
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",

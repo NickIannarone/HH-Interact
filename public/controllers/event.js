@@ -1,4 +1,4 @@
-angular.module('interact')
+angular.module('nhs')
 
 .controller('eventCreate', ['$scope', "$state", "$rootScope", "Event", function($scope, $state, $rootScope, Event){
 	$scope.eventData = {} || $scope.eventData;
