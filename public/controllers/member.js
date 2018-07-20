@@ -6,7 +6,7 @@ function totalHours(events) {
     return total;
 }
 
-angular.module('interact')
+angular.module('nhs')
 
     .controller('memberList', ['$scope', "$state", "$rootScope", 'Excel', "User", "$timeout", function($scope, $state, $rootScope, Excel, User, $timeout) {
         if (!$rootScope.members) {

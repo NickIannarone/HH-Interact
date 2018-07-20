@@ -1,4 +1,4 @@
-angular.module('interact')
+angular.module('nhs')
 
 .factory("Event", ["$http", "$rootScope", "Auth", function($http, $rootScope,Auth){
     var userID = $rootScope.user.id,

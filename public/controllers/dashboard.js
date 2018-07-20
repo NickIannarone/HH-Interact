@@ -1,4 +1,4 @@
-angular.module('interact')
+angular.module('nhs')
 
 .controller('dashboard', ['$scope', "$state", "$rootScope", "Event", "UpcomingEvent", "$timeout", "$sce", function($scope, $state, $rootScope, Event, UpcomingEvent, $timeout, $sce){
     $scope.events = [];

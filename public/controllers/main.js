@@ -1,4 +1,4 @@
-angular.module('interact')
+angular.module('nhs')
 
     .controller('main', ['$scope', '$rootScope', '$state', 'Auth', function($scope, $rootScope, $state, Auth) {
         $rootScope.user = $rootScope.user || {};
