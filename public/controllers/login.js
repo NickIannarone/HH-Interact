@@ -22,6 +22,8 @@ angular.module('nhs')
     .controller('signup', ['$scope', "$state", "$rootScope", "User", function($scope, $state, $rootScope, User) {
         $scope.seniorYear = (new Date()).getFullYear();
         $scope.juniorYear = $scope.seniorYear + 1;
+        $scope.sophomoreYear = $scope.seniorYear + 2;
+        $scope.freshmanYear = $scope.seniorYear + 3;
         $scope.user = $scope.user || {};
         $scope.user.gradyear = $scope.juniorYear + "";
 
