@@ -1,5 +1,5 @@
 # HH-Interact
-Interact Club Website. Live @ [https://murmuring-tor-43501.herokuapp.com](https://murmuring-tor-43501.herokuapp.com)
+Interact Club Website. Live @ [https://hhinteract.herokuapp.com]( https://hhinteract.herokuapp.com)
 
 ## What is This
 In high school, I gave this site to a friend for his new volunteer club: HH Interact. Most of the code is from the hh-nhs project by @varughese, upon which I added a few features such as the Contact Info and Photos pages.
@@ -15,9 +15,9 @@ It is a pretty simple CRUD app built with the MEAN stack, deployed to Heroku. It
 
 
 ## Screenshots
-![](https://imgur.com/hBfGkai)
-![](https://imgur.com/CFPJAvY)
-![](https://imgur.com/a/EnmfOYH)
+![](https://i.imgur.com/hBfGkai.png)
+![](https://i.imgur.com/CFPJAvY.png)
+![](https://i.imgur.com/bYO6iXH.png) 
 
 ## Instructions for Viewing
 - [Download Node.JS](https://nodejs.org/en/)
