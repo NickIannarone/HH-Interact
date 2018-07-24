@@ -1,8 +1,8 @@
-# HH-Interact
-Interact Club Website. Live @ [https://murmuring-tor-43501.herokuapp.com](https://murmuring-tor-43501.herokuapp.com)
+# hh-nhs
+NHS Website. Live @ [http://hhnhs.herokuapp.com](http://hhnhs.herokuapp.com)
 
 ## What is This
-In high school, I gave this site to a friend for his new volunteer club: HH Interact. Most of the code is from the hh-nhs project by @varughese, upon which I added a few features such as the Contact Info and Photos pages.
+In high school, I was a National Honor Society (NHS) officer and promised to create an application to digitize the logging of community service hours. Before, members had to go to the NHS advisor's room, request to get the "NHS notebook", flip through hundreds of pages to find their name, write their community service hours in, and *then* repeat this process for each new community service event they completed. It was 2016 at the time. Who uses paper to log things in 2016?
 
 It is a pretty simple CRUD app built with the MEAN stack, deployed to Heroku. It includes the following features:
 - Authentication
@@ -15,9 +15,11 @@ It is a pretty simple CRUD app built with the MEAN stack, deployed to Heroku. It
 
 
 ## Screenshots
-![](https://imgur.com/hBfGkai)
-![](https://imgur.com/CFPJAvY)
-![](https://imgur.com/a/EnmfOYH)
+![](https://i.imgur.com/VFTUs1xl.png)
+![](https://i.imgur.com/u1yf1swl.png)
+![](https://i.imgur.com/F9jNYE9l.png)
+
+![](https://i.imgur.com/qvRKls3l.png)
 
 ## Instructions for Viewing
 - [Download Node.JS](https://nodejs.org/en/)
@@ -47,3 +49,4 @@ To deploy a change
 - `git add .` `git commit -m "built"` `git push origin production`
 - Switch back to master branch! `git checkout master` If you forget this, you will be editing the wrong branch!
 
+I have a shell script that does this all for me, but I figured it's important to understand how the deployment process works.
