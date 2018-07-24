@@ -65,10 +65,15 @@ angular.module('nhs')
 			templateUrl: "templates/single-member.html",
 			controller: "singleMember"
 		})
-	.state("info", {
-			url: "/info",
-			templateUrl: "templates/info.html",
-			controller: "info"
+                .state("contact", {
+			url: "/contact",
+			templateUrl: "templates/contact.html",
+			controller: "contact"
+		})
+                .state("photos", {
+			url: "/photos",
+			templateUrl: "templates/photos.html",
+			controller: "photos"
 		})
         ;
 }])
