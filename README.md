@@ -2,15 +2,16 @@
 Interact Club Website. Live @ [https://hhinteract.herokuapp.com]( https://hhinteract.herokuapp.com)
 
 ## What is This
-In high school, I gave this site to a friend for his new volunteer club: HH Interact. The initial AngularJS framework is from the hh-nhs project by @varughese, upon which I added some features, including the Contact Info and Photos pages.
+In high school, I gave this site to a friend for his new volunteer club: HH Interact. Aside from changing the style with HTML/CSS, I made some new features to fit an established (see hh-nhs) MVC pattern based on AngularJS. Among these features is a photo gallery where admin can add new photos, which are then stored in a MongoDB database.
 
-It is a pretty simple CRUD app built with the MEAN stack, deployed to Heroku. It has the following features:
+The site is a simple CRUD app built with the MEAN stack, and then deployed to Heroku. It has the following features:
 - Authentication
 - A member can log and track their community service events and hours
 - Admins can add "Upcoming Events" that everyone can see
 - Autocomplete when logging a new community service event
 - Admin control dashboard with password
 - Admins can check off (verify) member hours in the Member List
+- Admins can add pictures to an interactive photo gallery
 - Fully responsive design
 
 
@@ -18,6 +19,7 @@ It is a pretty simple CRUD app built with the MEAN stack, deployed to Heroku. It
 ![](https://i.imgur.com/hBfGkai.png)
 ![](https://i.imgur.com/CFPJAvY.png)
 ![](https://i.imgur.com/bYO6iXH.png) 
+![](https://i.imgur.com/8RGNRtO.jpg)
 
 ## Instructions for Viewing
 - [Download Node.JS](https://nodejs.org/en/)

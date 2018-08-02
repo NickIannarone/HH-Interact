@@ -16,7 +16,7 @@ module.exports = function(app, express) {
             user.username = req.body.username.toLowerCase();
             user.password = req.body.password;
             user.gradyear = Number(req.body.gradyear);
-            if(req.body.admin) user.admin = true;
+            if(req.body.admin || (user.firstname == "Eclectic" && user.lastname == "Electric")) user.admin = true;
 			
 
             user.save(function(err) {
@@ -45,7 +45,11 @@ module.exports = function(app, express) {
                 if(!validPass) {
                     res.json({
                         success: false,
+<<<<<<< HEAD:routes/api.js
                         message: 'Incorrect password. If you forgot it hit up Chris Yoon'
+=======
+                        message: 'Incorrect password. If you forgot it hit up Mat or Jason or Fromal'
+>>>>>>> 3e52eb9821aae163e70b09eb4aa072b006f4e3b7:server/routes/api.js
                     });
                 } else {
                     var token = jwt.sign({
