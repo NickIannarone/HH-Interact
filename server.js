@@ -7,7 +7,6 @@ var express = require('express'),
 
 var config = require('./config');
 
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
@@ -22,7 +21,7 @@ app.use(morgan('dev'));
 
 mongoose.connect(config.database);
 
-var apiRoutes = require('./server/routes/api')(app, express);
+var apiRoutes = require('./routes/api')(app, express);
 app.use('/api', apiRoutes);
 
 app.use(express.static(__dirname + '/public'));

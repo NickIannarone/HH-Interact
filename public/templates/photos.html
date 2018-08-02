@@ -17,13 +17,13 @@
 
 <div class="row">
 <div class="column">
-        <img class="img-responsive" src="../images/photo-one.jpg" />
+        <img class="img-responsive" src="{{url1}}" />
 </div>
 <div class="column">
-        <img class="img-responsive" src="../images/photo-two.png" />
+        <img class="img-responsive" src="{{url2}}" />
 </div>
 <div class="column">
-        <img class="img-responsive" src="../images/photo-three.jpg" />
+        <img class="img-responsive" src="{{url3}}" />
 </div>
 </div>
 
@@ -31,17 +31,53 @@
 <p></p>
 <p></p>
 <div class="column">
-        <img class="img-responsive" src="../images/photo-four.jpg" />
+        <img class="img-responsive" src="{{url4}}" />
 </div>
 <div class="column">
-        <img class="img-responsive" src="../images/photo-five.png" />
+        <img class="img-responsive" src="{{url5}}" />
 </div>
 <div class="column">
-        <img class="img-responsive" src="../images/photo-six.jpg" />
+        <img class="img-responsive" src="{{url6}}" />
 </div>
-<p></p>
-<p></p>
-
 </div>
 
+<div class="row">
+<p></p>
+<p></p>
+<div class="column">
+        <img class="img-responsive" src="{{url7}}" />
+</div>
+<div class="column">
+        <img class="img-responsive" src="{{url8}}" />
+</div>
+<div class="column">
+        <img class="img-responsive" src="{{url9}}" />
+</div>
+</div>
+
+<p></p>
+<p></p>
+ 
+        <div class="form-group" ng-if="user.admin">
+		<form ng-submit="switchPhoto(oldPhoto, newPhoto)">
+			<p></p>
+			<p></p>
+			<p></p>
+			<font size="4"><p align="center"><label><u>The Gallery Editor</u> (only visible to admin)</label></p></font>
+			<p></p>
+			<p></p>
+			<p></p>
+			<font size="3"><p>To change a photo, right-click on the one you want to replace, click "Copy image address," and paste into the top field. Then, 
+			upload the replacement photo on <a href="http://tinypic.com/" target="_blank">tinypic.com</a>, copy the URL that appears under "Direct Link for Layouts,"
+			and paste it into the bottom field here. Then, click Submit. Refresh page to see changes.</p></font>
+			<input type="text" class="form-control" name="oldPhoto" ng-model="oldPhoto" placeholder="Image to remove">
+			<input type="text" class="form-control" name="newPhoto" ng-model="newPhoto" placeholder="Image to insert">
+            <p></p>
+			<p></p>			
+			<button type="submit" class="btn btn-primary btn-block" style="color:#4ffc23"><b>Submit</b></button>
+			<p></p>
+			<p></p>
+		</form>
+		</div>
+    
 </div>

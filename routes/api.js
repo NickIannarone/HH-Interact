@@ -1,7 +1,7 @@
 var User = require('../models/user'),
     Event = require('../models/event').events,
     UpcomingEvent = require('../models/event').upcomingEvents,
-    config = require('../../config'),
+    config = require('../config'),
     jwt = require('jsonwebtoken');
 
 module.exports = function(app, express) {
@@ -16,7 +16,7 @@ module.exports = function(app, express) {
             user.username = req.body.username.toLowerCase();
             user.password = req.body.password;
             user.gradyear = Number(req.body.gradyear);
-            if(req.body.admin || (user.firstname == "Eclectic" && user.lastname == "Electric")) user.admin = true;
+            if(req.body.admin) user.admin = true;
 			
 
             user.save(function(err) {
@@ -45,7 +45,7 @@ module.exports = function(app, express) {
                 if(!validPass) {
                     res.json({
                         success: false,
-                        message: 'Incorrect password. If you forgot it hit up Mat or Jason or Fromal'
+                        message: 'Incorrect password. If you forgot it hit up Chris Yoon'
                     });
                 } else {
                     var token = jwt.sign({

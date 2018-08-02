@@ -1,7 +1,8 @@
 angular.module('nhs')
 
 .factory("Event", ["$http", "$rootScope", "Auth", function($http, $rootScope,Auth){
-    var userID = $rootScope.user.id,
+	
+	var userID = $rootScope.user.id,
         apiUrl = '/api/users/' + userID + '/events/';
 
     var watcher = $rootScope.$watch("user", function(n, o, s) {
@@ -13,11 +14,11 @@ angular.module('nhs')
     });
 
     var e = {};
-
+	
     e.all = function() {
         return $http.get(apiUrl)
             .then(function(repsonse) {
-                return repsonse.data;
+				return repsonse.data;
             });
     };
 
@@ -28,10 +29,10 @@ angular.module('nhs')
     e.get = function(eventID) {
         return $http.get(apiUrl + eventID)
             .then(function(response) {
-                return response.data;
+				return response.data;
             });
     };
-
+	
     e.update = function(eventID, eventData) {
         return $http.put(apiUrl + eventID, eventData);
     };
@@ -71,7 +72,7 @@ angular.module('nhs')
     e.update = function(eventID, eventData) {
         return $http.put(apiUrl + eventID, eventData);
     };
-
+	
     e.delete = function(eventID) {
         return $http.delete(apiUrl + eventID);
     };

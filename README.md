@@ -2,9 +2,9 @@
 Interact Club Website. Live @ [https://hhinteract.herokuapp.com]( https://hhinteract.herokuapp.com)
 
 ## What is This
-In high school, I gave this site to a friend for his new volunteer club: HH Interact. Most of the code is from the hh-nhs project by @varughese, upon which I added a few features such as the Contact Info and Photos pages.
+In high school, I gave this site to a friend for his new volunteer club: HH Interact. Most of the logic is from the hh-nhs project by @varughese, but I changed the design and added a few features such as the Contact Info page and an interactive (for admin users) photo gallery.
 
-It is a pretty simple CRUD app built with the MEAN stack, deployed to Heroku. It includes the following features:
+This is a CRUD app built with the MEAN stack and deployed to Heroku. It includes the following features:
 - Authentication
 - A member can log and track their community service events and hours
 - Admins can add "Upcoming Events" that everyone can see
@@ -19,7 +19,7 @@ It is a pretty simple CRUD app built with the MEAN stack, deployed to Heroku. It
 ![](https://i.imgur.com/CFPJAvY.png)
 ![](https://i.imgur.com/bYO6iXH.png) 
 
-## Instructions for Viewing
+## Instructions for Viewing (credit to @varughese)
 - [Download Node.JS](https://nodejs.org/en/)
   - Download the Version 4
   - Download the file and run it. Go through the set up

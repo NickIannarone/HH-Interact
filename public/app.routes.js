@@ -67,13 +67,13 @@ angular.module('nhs')
 		})
                 .state("contact", {
 			url: "/contact",
-			templateUrl: "templates/contact.html",
-			controller: "contact"
+			templateUrl: "templates/contact.html"
+		    //controller: "contact"
 		})
                 .state("photos", {
 			url: "/photos",
 			templateUrl: "templates/photos.html",
-			controller: "photos"
+			controller: "eventEdit"
 		})
         ;
 }])

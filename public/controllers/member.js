@@ -9,7 +9,8 @@ function totalHours(events) {
 angular.module('nhs')
 
     .controller('memberList', ['$scope', "$state", "$rootScope", 'Excel', "User", "$timeout", function($scope, $state, $rootScope, Excel, User, $timeout) {
-        if (!$rootScope.members) {
+        
+		if (!$rootScope.members) {
             User.all()
                 .then(function(userList) {
                     for (var i = userList.length - 1; i >= 0; i--) {
@@ -77,7 +78,8 @@ angular.module('nhs')
         };
 
         $scope.removeUser = function(event, member, timerFalse) {
-            var useTimer = !timerFalse;
+           
+			var useTimer = !timerFalse;
             var row = event.currentTarget.parentElement;
             if (useTimer) {
                 $timeout(function() {
