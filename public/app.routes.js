@@ -65,24 +65,15 @@ angular.module('nhs')
 			templateUrl: "templates/single-member.html",
 			controller: "singleMember"
 		})
-                .state("contact", {
+        .state("contact", {
 			url: "/contact",
-<<<<<<< HEAD
-			templateUrl: "templates/contact.html"
-		    //controller: "contact"
-=======
 			templateUrl: "templates/contact.html",
 			controller: "contact"
->>>>>>> 3e52eb9821aae163e70b09eb4aa072b006f4e3b7
 		})
-                .state("photos", {
+        .state("photos", {
 			url: "/photos",
 			templateUrl: "templates/photos.html",
-<<<<<<< HEAD
 			controller: "eventEdit"
-=======
-			controller: "photos"
->>>>>>> 3e52eb9821aae163e70b09eb4aa072b006f4e3b7
 		})
         ;
 }])
