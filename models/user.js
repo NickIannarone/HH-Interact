@@ -7,7 +7,7 @@ var UserSchema = new Schema({
     lastname: String,
     username: { type: String, required: true, index: { unique: true}},
     password: { type: String, required: true, select: false},
-    events: [ { type: Schema.Types.ObjectId, ref: 'Events'}],
+    events: [ { type: String, ref: 'Events'}],
     admin: { type: Boolean, default: false },
     gradyear: { type: Number, default: new Date().getFullYear() + 1 }
 });

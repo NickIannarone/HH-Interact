@@ -67,7 +67,6 @@ module.exports = function(apiRouter) {
                 });
             });
         });
-
     apiRouter.get('/upcoming-events', function(req, res) {
         var filter = {};
         if(req.query.name) {

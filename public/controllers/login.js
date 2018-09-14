@@ -24,6 +24,7 @@ angular.module('nhs')
         $scope.juniorYear = $scope.seniorYear + 1;
         $scope.sophomoreYear = $scope.seniorYear + 2;
         $scope.freshmanYear = $scope.seniorYear + 3;
+		$scope.freshmanYearFall = $scope.seniorYear + 4;
         $scope.user = $scope.user || {};
         $scope.user.gradyear = $scope.juniorYear + "";
 

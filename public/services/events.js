@@ -22,8 +22,11 @@ angular.module('nhs')
             });
     };
 
-    e.create = function(eventData) {
-        return $http.post(apiUrl, eventData);
+	e.create = function(eventData) {
+        return $http.post(apiUrl, eventData)
+            .then(function(repsonse) {
+				return repsonse.data;
+            });
     };
 
     e.get = function(eventID) {

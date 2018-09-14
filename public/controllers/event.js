@@ -1,14 +1,17 @@
 angular.module('nhs')
 
-.controller('eventCreate', ['$scope', "$state", "$rootScope", "Event", function($scope, $state, $rootScope, Event){
+.controller('eventCreate', ['$scope', "$state", "$rootScope", "$stateParams", "Event", "User", function($scope, $state, $rootScope, $stateParams, Event, User){
 	$scope.eventData = {} || $scope.eventData;
 
 	$scope.eventData.date = Date.now();
-
+	Event.all().then(function(response){alert(response);});
+	
 	$scope.saveEvent = function(){
-        Event.create($scope.eventData)
+        User.addEvent($rootScope.user.id, $scope.eventData)
             .then(function() {
-                $state.go("dashboard");
+				Event.all().then(function(response){alert(response);});
+				
+				$state.go("dashboard");
             });
     };
 
@@ -18,12 +21,14 @@ angular.module('nhs')
 
 }])
 
-.controller('eventEdit', ['$scope', "$state", "$rootScope", '$stateParams', 'Event', function($scope, $state, $rootScope, $stateParams, Event){
+.controller('eventEdit', ['$scope', "$state", "$rootScope", '$stateParams', 'Event', 'User', function($scope, $state, $rootScope, $stateParams, Event, User){
     
 	var eventID = $stateParams.eventID;
     var pos = 0;
 	var urls = [];
 	var queue = []; //just b/c with callbacks, I can't tell what got added when
+	//alert($rootScope.user.id);
+	//User.addEvent($rootScope.user.id, eventID).then(function(data) {});
 	
     Event.get(eventID)
         .then(function(event) {
