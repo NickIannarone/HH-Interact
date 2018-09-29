@@ -1,17 +1,14 @@
 angular.module('nhs')
 
-.controller('eventCreate', ['$scope', "$state", "$rootScope", "$stateParams", "Event", "User", function($scope, $state, $rootScope, $stateParams, Event, User){
+.controller('eventCreate', ['$scope', "$state", "$rootScope", "Event", "User", function($scope, $state, $rootScope, Event){
 	$scope.eventData = {} || $scope.eventData;
 
 	$scope.eventData.date = Date.now();
-	Event.all().then(function(response){alert(response);});
 	
 	$scope.saveEvent = function(){
-        User.addEvent($rootScope.user.id, $scope.eventData)
+        Event.create($scope.eventData)
             .then(function() {
-				Event.all().then(function(response){alert(response);});
-				
-				$state.go("dashboard");
+                $state.go("dashboard");
             });
     };
 

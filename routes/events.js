@@ -11,7 +11,6 @@ module.exports = function(apiRouter) {
                 res.json(user.events);
             });
         })
-		
         .post(function(req, res) {
             var event = new Event();
             event.name = req.body.name;
@@ -32,7 +31,6 @@ module.exports = function(apiRouter) {
 
     apiRouter.route('/users/:userID/events/:eventID')
         .get(function(req, res) {
-			
             Event.findById(req.params.eventID).lean().exec(function(err, evt) {
 				// evt.date = moment(evt.date).format("YYYY MM DD");
 				res.json(evt);
@@ -53,7 +51,7 @@ module.exports = function(apiRouter) {
                     res.json({message: 'Event updated'});
                 });
             });
-        })			
+        })
         .delete(function(req, res) {
             var id = req.params.eventID;
             Event.remove({
@@ -67,6 +65,7 @@ module.exports = function(apiRouter) {
                 });
             });
         });
+
     apiRouter.get('/upcoming-events', function(req, res) {
         var filter = {};
         if(req.query.name) {

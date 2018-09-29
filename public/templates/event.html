@@ -5,11 +5,7 @@
 
 <form ng-submit="saveEvent()">
   <div class="form-group">
-	<p></p>
-	<label>URGENT: Auto-communication with the database is down (this applies to NHS, Key Club, etc.), which is why you can't add 
-	events for now. The site owners will update events manually for each user, at least once a month. If you're creating a new event,
-	please put your z-username before the actual name of the event so that the site owners know which events are yours. Thank you.</label>
-	<p></p>	
+	
     <label>Name</label>
     <input ng-model="eventData.name" uib-typeahead="uevent.name for uevent in upcoming | filter: {'name': $viewValue }"
            typeahead-on-select='setUEvent($item)'

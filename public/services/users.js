@@ -31,13 +31,6 @@ angular.module('nhs')
                 });
         };
 
-		user.addEvent = function(userID, eventData) {
-        return $http.post(apiUrl + userID + "/events", eventData)
-            .then(function(repsonse) {
-				return repsonse.data;
-            });
-		};
-
         user.checkEvent = function(userID, eventID) {
             return $http.post(apiUrl + userID + "/events/" + eventID + "/check")
                 .then(function(response) {
