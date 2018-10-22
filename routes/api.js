@@ -1,7 +1,7 @@
 var User = require('../models/user'),
     Event = require('../models/event').events,
     UpcomingEvent = require('../models/event').upcomingEvents,
-    config = require('../../config'),
+    config = require('../config'),
     jwt = require('jsonwebtoken');
 
 module.exports = function(app, express) {
