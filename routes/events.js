@@ -20,8 +20,8 @@ module.exports = function(apiRouter) {
 
             event.save(function(err, event) {
                 if(err) return res.send(err);
-
-                req.user.events.push(event);
+                var eventId = typeof event == "sting" ? event : event._id;
+                req.user.events.push(eventId);
                 req.user.save(function(err, user) {
                     if(err) return res.send(err);
                     res.json(user);
