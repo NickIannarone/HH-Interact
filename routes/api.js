@@ -45,7 +45,7 @@ module.exports = function(app, express) {
                 if(!validPass) {
                     res.json({
                         success: false,
-                        message: 'Incorrect password. If you forgot it hit up Mat or Jason or Fromal'
+                        message: 'Incorrect password. If you forgot it, talk to Mrs. Varano'
                     });
                 } else {
                     var token = jwt.sign({
